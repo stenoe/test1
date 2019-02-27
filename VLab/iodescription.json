@@ -1,0 +1,26 @@
+{
+  "inputs": [
+    {
+      "id": "DataObject_0h3a3ff",
+      "inputType": "individual",
+      "valueType": "value",
+      "description": "URL to download the ASCII data",
+      "name": "NWP model output for stat corrections",
+      "obligation": true,
+      "hasDefault": false,
+      "valueSchema": "url",
+      "target": "data/testdata.tar"
+ }
+  ],
+  "outputs": [
+    {
+      "id": "DataObject_0n95v5p",
+      "outputType": "individual",
+      "valueType": "value",
+      "description": "Graphical output for stat parameters",
+      "name": "dat and png",
+      "valueSchema": "url",
+      "target": "scripts1/"
+ }
+  ]
+}

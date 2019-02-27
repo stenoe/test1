@@ -1,0 +1,14 @@
+{
+  "scripts": [
+    {
+      "repoPath": "run.sh",
+      "targetPath": "run.sh",
+      "pathType": "FILE"
+ },
+    {
+      "repoPath": "ama_maebiastaSKA_T2M_v1.py",
+      "targetPath": "ama_maebiastaSKA_T2M_v1.py",
+      "pathType": "FILE"
+ }
+  ]
+}
