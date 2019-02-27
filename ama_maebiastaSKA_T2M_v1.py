@@ -17,8 +17,8 @@ import shutil
 import matplotlib.pyplot as plt
 
 NFLen = 49
-fstatname  = np.chararray(NFLen,73) #67   # ---> statistics for all stations by forecast length
-fcorfname  = np.chararray(NFLen,67) #61 45)    # ---> T2m correction values for all stations
+fstatname  = np.chararray(NFLen,72) #67   # ---> statistics for all stations by forecast length
+fcorfname  = np.chararray(NFLen,66) #61 45)    # ---> T2m correction values for all stations
 
 #    fstat.write ('UTC FL   N  METS  #D %GOOD %OTR  %OK %BAD %TOT   %B+  %B- %HRo %HRn     avgC    maxC    minC    avgBo   avgBn   avgMo   avgMn   diffM    maxBo   maxBn   minBo   minBn   rngBo   rngBn \n') 
 #        fstat.write ( ('%3s%3d%4d%6s%4d %5d%5d%5d%5d%5d %5d%5d%5d%5d %8.3f%8.3f%8.3f %8.3f%8.3f%8.3f%8.3f%8.3f %8.3f%8.3f%8.3f%8.3f%8.3f%8.3f \n') % \
@@ -169,12 +169,12 @@ for kmk in range (startDAY, endDAY):    # --- START LOOP OVER DAYS IN MONTH
         
 # -E-> 49-NFLen files with saved avg/min/max/range statistics (on bias, mae, hit-rate, corr): ALL stations by ONE forecast length 
 # ... DSTATSUMV/UTC00/2013053100/FH00UTC_2013053100_stats_fl00_00_00.out
-        fstatname[nn]='/data/DSTATSUMV/UTC'+runHH+'/' + daydirM0s[kmk] + '/FH'+runHH+'UTC_'\
+        fstatname[nn]='data/DSTATSUMV/UTC'+runHH+'/' + daydirM0s[kmk] + '/FH'+runHH+'UTC_'\
         + daydirM0s[kmk] + '_stats_fl' + adxNN + '_'+runHH+'_' + adxNN2 + '.out'
         #t print 'nn, fstatname[nn] =', nn, fstatname[nn]
 
 # -F-> 49-NFLen files to save T2m correction values: ALL stations by ONE forecast length           
-        fcorfname[nn] = '/data/DINTERPOL/UTC'+runHH+'/' + daydirM1s[kmk] + 'R/FH'+runHH+'UTC_'\
+        fcorfname[nn] = 'data/DINTERPOL/UTC'+runHH+'/' + daydirM1s[kmk] + 'R/FH'+runHH+'UTC_'\
         + 'corta_fl' + adxNN + '_'+runHH+'_' + adxNN2 + '.out'
         #t print 'nn, fcorfname[nn] =', nn, fcorfname[nn]
         

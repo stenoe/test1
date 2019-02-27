@@ -1,14 +1,14 @@
 echo "Copy input data, unarchive"
 
 cd data/ 
-cp ../testdata/*.tar .
+# cp ../testdata/*.tar .
 tar -xvf *.tar
 
 ls -all
 
 echo "Go to working directory"
 
-cd ../script1/
+#cd ../script1/
 pwd
 
 echo "Setup Display"
@@ -19,6 +19,6 @@ export GSHOSTNAME=boundless-test
 
 echo "Run the model"
 
-Xvfb :99 -ac -noreset & python /script1/ama_maebiastaSKA_T2M_v1.py 
+Xvfb :99 -ac -noreset & python ama_maebiastaSKA_T2M_v1.py 
 
 ls -all
