@@ -9,7 +9,7 @@
       "obligation": true,
       "hasDefault": false,
       "valueSchema": "url",
-      "target": "https://s3.amazonaws.com/vlab-test-data/icupe/testdata.tar"
+      "target": "data/testdata.tar"
  }
   ],
   "outputs": [
