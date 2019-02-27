@@ -8,7 +8,7 @@ ls -all
 
 echo "Go to working directory"
 
-#cd ../script1/
+cd ..
 pwd
 
 echo "Setup Display"
