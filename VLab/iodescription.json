@@ -20,7 +20,7 @@
       "description": "Graphical output for stat parameters",
       "name": "fig_SKA_avg_T2m_ALL_201503_00utc.png",
       "valueSchema": "url",
-      "target": "scripts1/fig_SKA_avg_T2m_ALL_201503_00utc.png"
+      "target": "fig_SKA_avg_T2m_ALL_201503_00utc.png"
  }
   ]
 }
