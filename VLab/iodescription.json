@@ -5,11 +5,11 @@
       "inputType": "individual",
       "valueType": "value",
       "description": "URL to download the ASCII data",
-      "name": "NWP model output for stat corrections",
+      "name": "INPUT NWP model output for stat corrections",
       "obligation": true,
       "hasDefault": false,
       "valueSchema": "url",
-      "target": "data/testdata.tar"
+      "target": "https://s3.amazonaws.com/vlab-test-data/icupe/testdata.tar"
  }
   ],
   "outputs": [
